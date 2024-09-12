@@ -46,7 +46,23 @@ const gardenArea = PI * radius * radius
 /* number of max plants garden can hold */
 const maxPlants = gardenArea / plantSpace;
 /* console.log(maxPlants);
-98.171875 */
+ 98.171875 */
+
+/* gardenArea = 78.53750000000001
+   maxPlants = 98.171875 */
+
+const startingPlants = 20;
+const weeks = 3;
+let currentPlants = startingPlants;
+
+for (let i = 0; i < weeks; i++) {
+    currentPlants *= 2;
+}
+console.log(`There will be ${currentPlants} after ${weeks}.`);
+/* There will be 160 after 3. */
+
+
+
 
 
 
